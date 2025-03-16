@@ -39,7 +39,15 @@
 .icons i{
     background-color: black;
     color: white;
-    font-size: 10px;
-    padding: 2px 4px;
+    font-size: 14px;
+    padding: 3px 5px;
     border-radius: 50%;
+}
+
+footer .about ul li a, .verse ul li a, .rest ul li a, .learn ul li a{
+    color: gray;
+}
+
+footer .about ul li:hover a, .verse ul li:hover a, .rest ul li:hover a, .learn ul li:hover a{
+    color: rgba(0, 0, 0, 0.822);
 }
