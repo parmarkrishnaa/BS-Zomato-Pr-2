@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.food-event .online{
+    transition: all 0.5s ease-in-out;
+}
+
+.food-event .online:hover{
+    transform: scale(1.1);
+}
+
+.food-event .dining{
+    transition: all 0.5s ease-in-out;
+}
+
+.food-event .dining:hover{
+    transform: scale(1.1);
+}
+
+.food-event .event{
+    transition: all 0.5s ease-in-out;
+}
+
+.food-event .event:hover{
+    transform: scale(1.1);
+}
+
+.local .box-1 a, .box-2 a, .box-3 a, .box-4 a, .box-5 a, .box-6 a, .box-7 a, .box-8 a, .box-9 a{
+    transition: all 0.5s ease-in-out;
+}
+
+.local .box-1:hover, .box-2:hover, .box-3:hover, .box-4:hover, .box-5:hover, .box-6:hover, .box-7:hover, .box-8:hover, .box-9:hover{
+    box-shadow: rgba(155, 142, 142, 0.336) 0px 1.42623px;
+}
+
+.icons i{
+    background-color: black;
+    color: white;
+    font-size: 10px;
+    padding: 2px 4px;
+    border-radius: 50%;
+}

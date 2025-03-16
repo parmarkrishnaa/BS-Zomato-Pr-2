@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zomato</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="shortcut icon" href="./images/Zomato_logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div class="row d-flex align-items-center">
+                <div class="col-md-2">
+                    <div class="get-app position-absolute mt-3">
+                        <a href="#" class="text-decoration-none text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="#FFFFFF" width="10" height="10"
+                                viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img"
+                                class="sc-rbbb40-0 gvsUip">
+                                <title>download-app</title>
+                                <path
+                                    d="M18.5793 9.18939H16.5865H16.3199C15.7307 9.18939 15.2529 9.6672 15.2529 10.2583V10.3742C15.2529 10.9659 15.7307 11.444 16.3207 11.444H18.3156H18.5793C19.1696 11.444 19.6488 10.9639 19.6488 10.3742L19.6477 10.2569C19.6488 9.6672 19.1696 9.18939 18.5793 9.18939Z">
+                                </path>
+                                <path
+                                    d="M18.5804 6.52262H18.1097V1.35122C18.1097 0.607964 17.5017 0 16.7582 0H7.84167C7.09841 0 6.49045 0.608249 6.49045 1.35122V5.06151C4.69196 6.07821 2.83696 7.14029 2.83296 7.14286C1.82597 7.5573 0.350586 8.89453 0.350586 12.0522C0.350586 12.3342 0.369139 12.5945 0.395113 12.846C0.40339 12.9197 0.412524 12.9904 0.422514 13.0615C0.448488 13.2462 0.481027 13.4229 0.519845 13.5907C0.533831 13.6506 0.544678 13.7131 0.559805 13.7705C0.612039 13.9646 0.67255 14.1467 0.740482 14.32C0.774733 14.4059 0.811839 14.4841 0.84923 14.5646C0.88919 14.6494 0.929436 14.7327 0.972535 14.8106C1.02249 14.9045 1.07244 14.995 1.12724 15.0809C1.14037 15.1009 1.15464 15.1192 1.16805 15.1394C2.46847 17.1052 4.8675 17.114 4.8675 17.114H6.49045V18.6494C6.49045 19.3918 7.09841 19.9997 7.84167 19.9997H16.7579C17.5014 19.9997 18.1094 19.3915 18.1094 18.6494V16.7767H18.3155V16.7755H18.5784C19.1695 16.7755 19.6487 16.2974 19.6476 15.7063L19.6487 15.5898C19.6476 14.9996 19.1695 14.5229 18.5792 14.5229H18.3155H16.5861H16.3195C15.7292 14.5229 15.2525 15.0007 15.2525 15.5907V15.7091C15.2525 16.2977 15.7304 16.7775 16.3203 16.7775H17.1692V17.5008H7.43036V7.79877C7.91959 7.48851 8.37256 7.18995 8.63088 6.98987C9.93957 5.97774 11.1818 5.17169 11.3499 4.4407C11.5688 3.49222 10.8407 2.69302 9.57765 3.34922C9.17976 3.55587 8.36315 4.00885 7.43036 4.53261V2.14129L17.1692 2.14271V6.52205H16.5861V6.52319H16.3209C15.7304 6.52319 15.2511 7.001 15.2511 7.59269V7.70858C15.2511 8.29999 15.7303 8.77665 16.3195 8.77665H16.5846H18.3141H18.5798C19.1695 8.77665 19.6476 8.29884 19.6476 7.70858V7.58955C19.6487 7.00186 19.1709 6.52262 18.5804 6.52262ZM12.2986 17.9752C12.6731 17.9752 12.9751 18.2774 12.9751 18.6511C12.9751 19.0255 12.6728 19.3267 12.2986 19.3267C11.9256 19.3267 11.6242 19.0247 11.6242 18.6511C11.6247 18.2786 11.927 17.9752 12.2986 17.9752ZM13.7266 1.30098H10.8735C10.7839 1.30098 10.7097 1.2282 10.7097 1.13829C10.7097 1.04695 10.7839 0.974169 10.8735 0.974169H13.7266C13.8163 0.974169 13.8893 1.04667 13.8893 1.13829C13.8893 1.22792 13.8163 1.30098 13.7266 1.30098Z">
+                                </path>
+                                <path
+                                    d="M18.5788 11.8561H18.3151H16.3193C15.7302 11.8561 15.251 12.3353 15.251 12.9253V13.0423C15.251 13.6329 15.7291 14.1107 16.3193 14.1107H16.5845H18.3139H18.5782C19.1693 14.1107 19.646 13.6329 19.6474 13.0423V12.9253C19.6472 12.3353 19.1705 11.8561 18.5788 11.8561Z">
+                                </path>
+                            </svg>
+                            Get the App</a>
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <div class="start-50 position-absolute fs-5 mt-3">
+                        <a href="#" class="text-decoration-none text-white me-5">Investor Relations</a>
+                        <a href="#" class="text-decoration-none text-white me-5">Add Restaurant</a>
+                        <a href="#" class="text-decoration-none text-white me-5" role="button">Log in</a>
+                        <a href="#" class="text-decoration-none text-white" role="button">Sign up</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="banner">
+        <div class="img">
+            <img src="./images/banner-img.jpg" class="img-fluid w-100" style="height: 450px;" alt="">
+        </div>
+        <div class="banner-content position-absolute text-center" style="color: black; top: 15%; left: 25%;">
+            <img src="./images/logo-img.jpg" class="img-fluid" style="width: 300px; height: 60px;" alt="">
+            <p class="text-white fs-2 mt-5" style="right: 200%;">Discover the best food & drinks in Ahmedabad</p>
+            <div class="input-group mt-5">
+                <button class="btn bg-light dropdown-toggle text-muted border-end border-secondary-subtle py-2"
+                    type="button" data-bs-toggle="dropdown" aria-expanded="false"> <i class="bi bi-geo-alt-fill"
+                        style="color: #ef4f5f;"></i> Prahlad Nagar, Ahmedabad</button>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a class="dropdown-item fs-5" style="color: #ef4f5f;" href="#"> <i
+                                class="bi bi-crosshair me-1"></i> Detect current location</a>
+                        <span class="text-muted ms-5">Using GPS</span>
+                    </li>
+                </ul>
+                <input type="text" class="form-control ps-5" placeholder="Search for restaurant, cuisine or a dish">
+            </div>
+        </div>
+    </section>
+
+    <section class="food-event mt-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="online">
+                        <div class="card" style="width: 360px; height: 280px;">
+                            <img src="./images/order-img.jpg" class="card-img-top img-fluid" style="height: 192px;"
+                                alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Order Online</h5>
+                                <p class="card-text pb-">Stay home and order to your doorstep</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="dining">
+                        <div class="card" style="width: 360px; height: 280px;">
+                            <img src="./images/dining-img.jpg" class="card-img-top img-fluid" style="height: 192px;"
+                                alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Dining</h5>
+                                <p class="card-text pb-">View the city's favourite dining venues</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="event">
+                        <div class="card" style="width: 360px; height: 280px;">
+                            <img src="./images/event-img.jpeg" class="card-img-top img-fluid" style="height: 192px;"
+                                alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Live Events</h5>
+                                <p class="card-text pb-">Discover India's best events & concerts</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="collection py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="title">
+                        <h2>Collections</h2>
+                        <div class="d-flex justify-content-between align-content-center">
+                            <p style="font-size: 20px;">Explore curated lists of top restaurants, cafes, pubs, and bars
+                                in Ahmedabad, based on trends </p>
+                            <a href="#" class="text-decoration-none">
+                                <span class="mt-1" style="color: #ef4f5f;">All collections in Ahmedabad <i
+                                        class="bi-caret-right-fill"></i> </span>
+                            </a>
+                        </div>
+                        <div class="d-flex">
+                            <div class="card text-bg-dark position-relative me-2 border-0"
+                                style="width: 268px; height: 320px;">
+                                <img src="./images/collection-1.jpg" class="card-img img-fluid w-100 h-100" alt="...">
+                                <div class="card-img-overlay position-absolute"
+                                    style="top: 77%; color: white; background-color: rgba(0, 0, 0, 0.493);">
+                                    <h6 class="card-title">Newly Opened Restaurants</h6>
+                                    <p class="card-text">6 places <i class="bi-caret-right-fill"></i> </p>
+                                </div>
+                            </div>
+                            <div class="card text-bg-dark position-relative me-2 border-0"
+                                style="width: 268px; height: 320px;">
+                                <img src="./images/collection-2.jpg" class="card-img img-fluid w-100 h-100" alt="...">
+                                <div class="card-img-overlay position-absolute"
+                                    style="top: 77%; color: white; background-color: rgba(0, 0, 0, 0.493);">
+                                    <h6 class="card-title">Top Trending Spots</h6>
+                                    <p class="card-text">28 places <i class="bi-caret-right-fill"></i> </p>
+                                </div>
+                            </div>
+                            <div class="card text-bg-dark position-relative me-2 border-0"
+                                style="width: 268px; height: 320px;">
+                                <img src="./images/collection-3.jpg" class="card-img img-fluid w-100 h-100" alt="...">
+                                <div class="card-img-overlay position-absolute"
+                                    style="top: 77%; color: white; background-color: rgba(0, 0, 0, 0.493);">
+                                    <h6 class="card-title">The Legends of Ahmedabad</h6>
+                                    <p class="card-text">16 places <i class="bi-caret-right-fill"></i> </p>
+                                </div>
+                            </div>
+                            <div class="card text-bg-dark position-relative me-2 border-0"
+                                style="width: 268px; height: 320px;">
+                                <img src="./images/collection-4.jpg" class="card-img img-fluid w-100 h-100" alt="...">
+                                <div class="card-img-overlay position-absolute"
+                                    style="top: 77%; color: white; background-color: rgba(0, 0, 0, 0.493);">
+                                    <h6 class="card-title">Best Buffets in Town</h6>
+                                    <p class="card-text">26 places <i class="bi-caret-right-fill"></i> </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="local">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="title">
+                        <h2>Popular localities in and around <span class="fw-bold">Ahmedabad</span> </h2>
+                    </div>
+                    <div class="d-flex">
+                        <div class="box-1 col-md-4 d-flex justify-content-between border rounded p-3 mt-4 me-3"
+                            style="width: 360px; height: 97px;">
+                            <a href="#" class="text-decoration-none text-black">
+                                <div class="d-flex flex-column">
+                                    <h5>Bodakdev</h5>
+                                    <p>501 places</p>
+                                </div>
+                            </a>
+                            <a href="#" class="text-black mt-3">
+                                <i class="bi bi-chevron-right" style="text-decoration: none;"></i>
+                            </a>
+                        </div>
+                        <div class="box-2 col-md-4 d-flex justify-content-between border rounded p-3 mt-4 me-3"
+                            style="width: 360px; height: 97px;">
+                            <a href="#" class="text-decoration-none text-black">
+                                <div class="d-flex flex-column">
+                                    <h5>Navrangpura</h5>
+                                    <p>422 places</p>
+                                </div>
+                            </a>
+                            <a href="#" class="text-black mt-3">
+                                <i class="bi bi-chevron-right" style="text-decoration: none;"></i>
+                            </a>
+                        </div>
+                        <div class="box-3 col-md-4 d-flex justify-content-between border rounded p-3 mt-4 me-3"
+                            style="width: 360px; height: 97px;">
+                            <a href="#" class="text-decoration-none text-black">
+                                <div class="d-flex flex-column">
+                                    <h5>Prahlad Nagar</h5>
+                                    <p>258 places</p>
+                                </div>
+                            </a>
+                            <a href="#" class="text-black mt-3">
+                                <i class="bi bi-chevron-right" style="text-decoration: none;"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="box-4 col-md-4 d-flex justify-content-between border rounded p-3 mt-4 me-3"
+                            style="width: 360px; height: 97px;">
+                            <a href="#" class="text-decoration-none text-black">
+                                <div class="d-flex flex-column">
+                                    <h5>Satellite</h5>
+                                    <p>431 places</p>
+                                </div>
+                            </a>
+                            <a href="#" class="text-black mt-3">
+                                <i class="bi bi-chevron-right" style="text-decoration: none;"></i>
+                            </a>
+                        </div>
+                        <div class="box-5 col-md-4 d-flex justify-content-between border rounded p-3 mt-4 me-3"
+                            style="width: 360px; height: 97px;">
+                            <a href="#" class="text-decoration-none text-black">
+                                <div class="d-flex flex-column">
+                                    <h5>Vastrapur</h5>
+                                    <p>313 places</p>
+                                </div>
+                            </a>
+                            <a href="#" class="text-black mt-3">
+                                <i class="bi bi-chevron-right" style="text-decoration: none;"></i>
+                            </a>
+                        </div>
+                        <div class="box-6 col-md-4 d-flex justify-content-between border rounded p-3 mt-4 me-3"
+                            style="width: 360px; height: 97px;">
+                            <a href="#" class="text-decoration-none text-black">
+                                <div class="d-flex flex-column">
+                                    <h5>C G Road</h5>
+                                    <p>114 places</p>
+                                </div>
+                            </a>
+                            <a href="#" class="text-black mt-3">
+                                <i class="bi bi-chevron-right" style="text-decoration: none;"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="box-7 col-md-4 d-flex justify-content-between border rounded p-3 mt-4 me-3"
+                            style="width: 360px; height: 97px;">
+                            <a href="#" class="text-decoration-none text-black">
+                                <div class="d-flex flex-column">
+                                    <h5>Gurukul</h5>
+                                    <p>128 places</p>
+                                </div>
+                            </a>
+                            <a href="#" class="text-black mt-3">
+                                <i class="bi bi-chevron-right" style="text-decoration: none;"></i>
+                            </a>
+                        </div>
+                        <div class="box-8 col-md-4 d-flex justify-content-between border rounded p-3 mt-4 me-3"
+                            style="width: 360px; height: 97px;">
+                            <a href="#" class="text-decoration-none text-black">
+                                <div class="d-flex flex-column">
+                                    <h5>Thaltej</h5>
+                                    <p>474 places</p>
+                                </div>
+                            </a>
+                            <a href="#" class="text-black mt-3">
+                                <i class="bi bi-chevron-right" style="text-decoration: none;"></i>
+                            </a>
+                        </div>
+                        <div class="box-9 col-md-4 d-flex justify-content-between border rounded p-3 mt-4 me-3"
+                            style="width: 360px; height: 97px;">
+                            <a href="#" class="text-decoration-none text-black">
+                                <div class="d-flex flex-column">
+                                    <h5>Ashram Road</h5>
+                                    <p>111 places</p>
+                                </div>
+                            </a>
+                            <a href="#" class="text-black mt-3">
+                                <i class="bi bi-chevron-right" style="text-decoration: none;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="get-app mt-5 py-5" style="background-color: #fffbf7;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="d-flex justify-content-end">
+                        <div class="img">
+                            <img src="./images/get-app-img.jpg" class="img-fluid" style="width: 410px; height: 450px;"
+                                alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="content mt-4">
+                        <h3>Get the Zomato app</h3>
+                        <p class="fs-5 fw-lighter">We will send you a link, open it on your phone to download the app
+                        </p>
+                        <div class="form-check d-inline-block mt-3">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="email" checked>
+                            <label class="form-check-label" for="email">Email</label>
+                        </div>
+                        <div class="form-check d-inline-block ms-5">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="phone">
+                            <label class="form-check-label" for="phone">Phone</label>
+                        </div>
+                        <div class="form mb-3 d-flex align-items-center">
+                            <input type="email" class="form-control mt-4" id="floatingInput" placeholder="Email"
+                                style="width: 292px; height: 48px;">
+                            <a class="py-2 px-2 border-0 rounded mb-2 ms-2 text-white text-decoration-none"
+                                style="background-color: #ef4f5f; margin-top: 29.5px;" role="button">Share App Link</a>
+                        </div>
+                        <p class="text-black-50">Download app from</p>
+                        <img src="./images/download-img-2.jpg" class="img-fluid" style="width: 137px; height: 40px;"
+                            alt="">
+                        <img src="./images/download-img-1.jpg" class="img-fluid ms-3"
+                            style="width: 137px; height: 40px;" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="explore py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Explore options near me</h2>
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item border border-2 mt-5">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                    aria-controls="flush-collapseOne">
+                                    <p class="fs-5 pt-2">Popular cuisines near me</p>
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body text-muted">
+                                    Bakery near me <i class="bi bi-dot"></i> Beverages near me <i class="bi bi-dot"></i>
+                                    Biryani near me <i class="bi bi-dot"></i> Burger near me <i class="bi bi-dot"></i>
+                                    Cafe near me <i class="bi bi-dot"></i> Chinese near me <i class="bi bi-dot"></i>
+                                    Coffee near me <i class="bi bi-dot"></i> Continental near me <i
+                                        class="bi bi-dot"></i> Desserts near me <i class="bi bi-dot"></i> Gujarati near
+                                    me <i class="bi bi-dot"></i> Ice Cream near me <i class="bi bi-dot"></i> Italian
+                                    near me <i class="bi bi-dot"></i> North Indian near me <i class="bi bi-dot"></i>
+                                    Pasta near me <i class="bi bi-dot"></i> Pizza near me <i class="bi bi-dot"></i>
+                                    Sandwich near me <i class="bi bi-dot"></i> Shake near me <i class="bi bi-dot"></i>
+                                    South Indian near me <i class="bi bi-dot"></i> Street near me <i
+                                        class="bi bi-dot"></i> Tea near me
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border border-2 mt-2">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                    aria-controls="flush-collapseOne">
+                                    <p class="fs-5">Popular restaurant types near me</p>
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body text-muted">
+                                    Bakeries near me <i class="bi bi-dot"></i> Bars near me <i class="bi bi-dot"></i>
+                                    Beverage Shops near me <i class="bi bi-dot"></i> Bhojanalya near me <i
+                                        class="bi bi-dot"></i> Cafés near me <i class="bi bi-dot"></i> Casual Dining
+                                    near me <i class="bi bi-dot"></i> Dessert Parlors near me <i class="bi bi-dot"></i>
+                                    Dhabas near me <i class="bi bi-dot"></i> Fine Dining near me <i
+                                        class="bi bi-dot"></i> Food Courts near me <i class="bi bi-dot"></i> Food Trucks
+                                    near me <i class="bi bi-dot"></i> Kiosks near me <i class="bi bi-dot"></i> Paan Shop
+                                    near me <i class="bi bi-dot"></i> Quick Bites near me <i class="bi bi-dot"></i>
+                                    Sweet Shops near me
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border border-2 mt-2">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                    aria-controls="flush-collapseOne">
+                                    <p class="fs-5">Top restaurant chains</p>
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <a href="#" class="d-inline-block text-muted text-decoration-none"
+                                        style="width: 17%; line-height: 1.9;">Bikanervala</a>
+                                    <a href="#" class="d-inline-block text-muted text-decoration-none"
+                                        style="width: 17%; line-height: 1.9;">Burger King</a>
+                                    <a href="#" class="d-inline-block text-muted text-decoration-none"
+                                        style="width: 17%; line-height: 1.9;">Burger Singh</a>
+                                    <a href="#" class="d-inline-block text-muted text-decoration-none"
+                                        style="width: 17%; line-height: 1.9;">Dunkin' Donuts</a>
+                                    <a href="#" class="d-inline-block text-muted text-decoration-none"
+                                        style="width: 17%; line-height: 1.9;">KFC</a>
+                                    <a href="#" class="d-inline-block text-muted text-decoration-none"
+                                        style="width: 17%; line-height: 1.9;">McDonald's</a>
+                                    <a href="#" class="d-inline-block text-muted text-decoration-none"
+                                        style="width: 17%; line-height: 1.9;">Pizza Hut </a>
+                                    <a href="#" class="d-inline-block text-muted text-decoration-none"
+                                        style="width: 17%; line-height: 1.9;">WOW! Momo</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border border-2 mt-2">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseFour" aria-expanded="false"
+                                    aria-controls="flush-collapseOne">
+                                    <p class="fs-5">Cities we deliver to</p>
+                                </button>
+                            </h2>
+                            <div id="flush-collapseFour" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <a href="#" class="d-inline-block text-muted text-decoration-none"
+                                        style="width: 17%; line-height: 2.5;">Delhi NCR</a>
+                                    <a href="#" class="d-inline-block text-muted text-decoration-none"
+                                        style="width: 17%; line-height: 2.5;">Kolkata</a>
+                                    <a href="#" class="d-inline-block text-muted text-decoration-none"
+                                        style="width: 17%; line-height: 2.5;">Mumbai</a>
+                                    <a href="#" class="d-inline-block text-muted text-decoration-none"
+                                        style="width: 17%; line-height: 2.5;">Bengaluru</a>
+                                    <a href="#" class="d-inline-block text-muted text-decoration-none"
+                                        style="width: 17%; line-height: 2.5;">Pune</a>
+                                    <a href="#" class="d-inline-block text-muted text-decoration-none"
+                                        style="width: 17%; line-height: 2.5;">Hyderabad</a>
+                                    <a href="#" class="d-inline-block text-muted text-decoration-none"
+                                        style="width: 17%; line-height: 2.5;">Chennai</a>
+                                    <a href="#" class="d-inline-block text-muted text-decoration-none"
+                                        style="width: 17%; line-height: 2.5;">Lucknow</a>
+                                    <a href="#" class="d-inline-block text-muted text-decoration-none"
+                                        style="width: 17%; line-height: 2.5;">Kochi</a>
+                                    <a href="#" class="d-inline-block text-muted text-decoration-none"
+                                        style="width: 17%; line-height: 2.5;">Jaipur</a>
+                                    <a href="#" class="d-inline-block text-muted text-decoration-none"
+                                        style="width: 17%; line-height: 2.5;">Ahmedabad</a>
+                                    <a href="#" class="d-inline-block text-muted text-decoration-none"
+                                        style="width: 17%; line-height: 2.5;">Chandigarh</a>
+                                    <a href="#" class="d-inline-block text-muted text-decoration-none"
+                                        style="width: 17%; line-height: 2.5;">Goa</a>
+                                    <a href="#" class="d-inline-block text-muted text-decoration-none"
+                                        style="width: 17%; line-height: 2.5;">Indore</a>
+                                    <a href="#" class="d-inline-block text-muted text-decoration-none"
+                                        style="width: 17%; line-height: 2.5;">Gangtok</a>
+                                    <a href="#" class="d-inline-block text-muted text-decoration-none"
+                                        style="width: 17%; line-height: 2.5;">Nashik</a>
+                                    <a href="#" class="d-inline-block text-muted text-decoration-none"
+                                        style="width: 17%; line-height: 2.5;">Ooty</a>
+                                    <a href="#" class="d-inline-block text-muted text-decoration-none"
+                                        style="width: 17%; line-height: 2.5;">Shimla</a>
+                                    <a href="#" class="d-inline-block text-muted text-decoration-none"
+                                        style="width: 17%; line-height: 2.5;">Ludhiana</a>
+                                    <a href="#" class="d-inline-block text-muted text-decoration-none"
+                                        style="width: 17%; line-height: 2.5;">Guwahati</a>
+                                    <a href="#" class="d-inline-block text-muted text-decoration-none"
+                                        style="width: 17%; line-height: 2.5;">Amritsar</a>
+                                    <a href="#" class="d-inline-block text-muted text-decoration-none"
+                                        style="width: 17%; line-height: 2.5;">Kanpur</a>
+                                    <a href="#" class="d-inline-block text-muted text-decoration-none"
+                                        style="width: 17%; line-height: 2.5;">Allahabad</a>
+                                    <a href="#" class="d-inline-block text-muted text-decoration-none"
+                                        style="width: 17%; line-height: 2.5;">Aurangabad</a>
+                                    <a href="#" class="d-inline-block text-muted text-decoration-none"
+                                        style="width: 17%; line-height: 2.5;">Bhopal</a>
+                                    <a href="#" class="d-inline-block text-muted text-decoration-none"
+                                        style="width: 17%; line-height: 2.5;">Ranchi</a>
+                                    <a href="#" class="d-inline-block text-muted text-decoration-none"
+                                        style="width: 17%; line-height: 2.5;">Visakhapatnam</a>
+                                    <a href="#" class="d-inline-block text-muted text-decoration-none"
+                                        style="width: 17%; line-height: 2.5;">Bhubaneswar</a>
+                                    <a href="#" class="d-inline-block text-muted text-decoration-none"
+                                        style="width: 17%; line-height: 2.5;">Coimbatore</a>
+                                    <a href="#" class="d-inline-block text-muted text-decoration-none"
+                                        style="width: 17%; line-height: 2.5;">Mangalore</a>
+                                    <a href="#" class="d-inline-block text-muted text-decoration-none"
+                                        style="width: 17%; line-height: 2.5;">Vadodara</a>
+                                    <a href="#" class="d-inline-block text-muted text-decoration-none"
+                                        style="width: 17%; line-height: 2.5;">Nagpur</a>
+                                    <a href="#" class="d-inline-block text-muted text-decoration-none"
+                                        style="width: 17%; line-height: 2.5;">Agra</a>
+                                    <a href="#" class="d-inline-block text-muted text-decoration-none"
+                                        style="width: 17%; line-height: 2.5;">Dehradun</a>
+                                    <a href="#" class="d-inline-block text-muted text-decoration-none"
+                                        style="width: 17%; line-height: 2.5;">Mysore</a>
+                                    <a href="#" class="d-inline-block text-muted text-decoration-none"
+                                        style="width: 17%; line-height: 2.5;">Puducherry</a>
+                                    <a href="#" class="d-inline-block text-muted text-decoration-none"
+                                        style="width: 17%; line-height: 2.5;">Surat</a>
+                                    <a href="#" class="d-inline-block text-muted text-decoration-none"
+                                        style="width: 17%; line-height: 2.5;">Varanasi</a>
+                                    <a href="#" class="d-inline-block text-muted text-decoration-none"
+                                        style="width: 17%; line-height: 2.5;">Patna</a>
+                                    <a href="#" class="d-inline-block text-muted text-decoration-none"
+                                        style="width: 17%; line-height: 2.5;">Udaipur</a>
+                                    <a href="#" class="d-inline-block text-muted text-decoration-none"
+                                        style="width: 17%; line-height: 2.5;">Srinagar</a>
+                                    <a href="#" class="d-inline-block text-muted text-decoration-none"
+                                        style="width: 17%; line-height: 2.5;">Khajuraho</a>
+                                    <a href="#" class="d-inline-block text-muted text-decoration-none"
+                                        style="width: 17%; line-height: 2.5;">Neemrana</a>
+                                    <a href="#" class="d-inline-block text-muted text-decoration-none"
+                                        style="width: 17%; line-height: 2.5;">Cuttack</a>
+                                    <a href="#" class="d-inline-block text-muted text-decoration-none"
+                                        style="width: 17%; line-height: 2.5;">Trivandrum</a>
+                                    <a href="#" class="d-inline-block text-muted text-decoration-none"
+                                        style="width: 17%; line-height: 2.5;">Haridwar</a>
+                                    <a href="#" class="d-inline-block text-muted text-decoration-none"
+                                        style="width: 17%; line-height: 2.5;">Leh</a>
+                                    <a href="#" class="d-inline-block text-muted text-decoration-none"
+                                        style="width: 17%; line-height: 2.5;">Pushkar</a>
+                                    <a href="#" class="d-inline-block text-muted text-decoration-none"
+                                        style="width: 17%; line-height: 2.5;">Rajkot</a>
+                                    <a href="#" class="d-inline-block text-muted text-decoration-none"
+                                        style="width: 17%; line-height: 2.5;">Madurai</a>
+                                    <a href="#" class="d-inline-block text-muted text-decoration-none"
+                                        style="width: 17%; line-height: 2.5;">Kozhikode</a>
+                                    <a href="#" class="d-inline-block text-muted text-decoration-none"
+                                        style="width: 17%; line-height: 2.5;">Alappuzha</a>
+                                    <a href="#" class="d-inline-block text-muted text-decoration-none"
+                                        style="width: 17%; line-height: 2.5;">Thrissur</a>
+                                    <a href="#" class="d-inline-block text-muted text-decoration-none"
+                                        style="width: 17%; line-height: 2.5;">Manipal</a>
+                                    <a href="#" class="d-inline-block text-muted text-decoration-none"
+                                        style="width: 17%; line-height: 2.5;">Vijayawada</a>
+                                    <a href="#" class="d-inline-block text-muted text-decoration-none"
+                                        style="width: 17%; line-height: 2.5;">Jodhpur</a>
+                                    <a href="#" class="d-inline-block text-muted text-decoration-none"
+                                        style="width: 17%; line-height: 2.5;">Kota</a>
+                                    <a href="#" class="d-inline-block text-muted text-decoration-none"
+                                        style="width: 17%; line-height: 2.5;">Ajmer</a>
+                                    <a href="#" class="d-inline-block text-muted text-decoration-none"
+                                        style="width: 17%; line-height: 2.5;">Mussoorie</a>
+                                    <a href="#" class="d-inline-block text-muted text-decoration-none"
+                                        style="width: 17%; line-height: 2.5;">Rishikesh</a>
+                                    <a href="#" class="d-inline-block text-muted text-decoration-none"
+                                        style="width: 17%; line-height: 2.5;">Jalandhar</a>
+                                    <a href="#" class="d-inline-block text-muted text-decoration-none"
+                                        style="width: 17%; line-height: 2.5;">Jammu</a>
+                                    <a href="#" class="d-inline-block text-muted text-decoration-none"
+                                        style="width: 17%; line-height: 2.5;">Manali</a>
+                                    <a href="#" class="d-inline-block text-black"
+                                        style="width: 17%; line-height: 2.5;">All deliver cities</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-5" style="background-color: #f8f8f8;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="title d-flex justify-content-between">
+                        <img src="./images/logo-img-2.jpg" class="img-fluid" style="width: 132px; height: 28px;" alt="">
+                        <div class="btn d-flex">
+                            <div class="dropdown me-3">
+                                <button class="btn btn-light border-secondary-subtle dropdown-toggle"
+                                    style="width: 109px; height: 38px;" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <img src="./images/india-flag-logo-3522C6780F-seeklogo.com.png" class="img-fluid"
+                                        style="width: 30%;" alt=""> India
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li class="d-flex">
+                                        <a class="dropdown-item" href="#">
+                                            <img src="./images/india-flag-logo-3522C6780F-seeklogo.com.png"
+                                                class="img-fluid" style="width: 40%;" alt=""> India
+                                        </a>
+                                        <a class="dropdown-item" href="#">
+                                            <img src="./images/Flag_of_the_United_Arab_Emirates.png" class="img-fluid"
+                                                style="width: 40%;" alt=""> UAE
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="dropdown">
+                                <button class="btn btn-light border-secondary-subtle dropdown-toggle"
+                                    style="width: 109px; height: 38px;" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <i class="bi bi-globe"></i> English
+                                </button>
+                                <ul class="dropdown-menu p-2">
+                                    <li>
+                                        <a href="#" class="text-decoration-none text-black">English</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-decoration-none text-black">Türkçe</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-decoration-none text-black">हिंदी</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-decoration-none text-black">Português (BR)</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-decoration-none text-black">Indonesian</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-decoration-none text-black">Português (PT)</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-decoration-none text-black">Español</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-decoration-none text-black">Čeština</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-decoration-none text-black">Slovenčina</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-decoration-none text-black">Polish</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-decoration-none text-black">Italian</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-decoration-none text-black">Vietnamese</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="about mt-3">
+                        <h5>About Zomato</h5>
+                        <ul class="navbar-nav">
+                            <li class="nav-item mt-3">
+                                <a href="#" class="text-decoration-none text-black-50">Who We Are</a>
+                            </li>
+                            <li class="nav-item mt-2">
+                                <a href="#" class="text-decoration-none text-black-50">Blog</a>
+                            </li>
+                            <li class="nav-item mt-2">
+                                <a href="#" class="text-decoration-none text-black-50">Work With Us</a>
+                            </li>
+                            <li class="nav-item mt-2">
+                                <a href="#" class="text-decoration-none text-black-50">Investor Relations</a>
+                            </li>
+                            <li class="nav-item mt-2">
+                                <a href="#" class="text-decoration-none text-black-50">Report Fraud</a>
+                            </li>
+                            <li class="nav-item mt-2">
+                                <a href="#" class="text-decoration-none text-black-50">Press Kit</a>
+                            </li>
+                            <li class="nav-item mt-2">
+                                <a href="#" class="text-decoration-none text-black-50">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="verse mt-3 pb-5">
+                        <h5>Zomaverse</h5>
+                        <ul class="navbar-nav">
+                            <li class="nav-item mt-3">
+                                <a href="#" class="text-decoration-none text-black-50">Zomato</a>
+                            </li>
+                            <li class="nav-item mt-2">
+                                <a href="#" class="text-decoration-none text-black-50">Blinkit</a>
+                            </li>
+                            <li class="nav-item mt-2">
+                                <a href="#" class="text-decoration-none text-black-50">District</a>
+                            </li>
+                            <li class="nav-item mt-2">
+                                <a href="#" class="text-decoration-none text-black-50">Feeding India</a>
+                            </li>
+                            <li class="nav-item mt-2">
+                                <a href="#" class="text-decoration-none text-black-50">Hyperpure</a>
+                            </li>
+                            <li class="nav-item mt-2">
+                                <a href="#" class="text-decoration-none text-black-50">Zomato Live</a>
+                            </li>
+                            <li class="nav-item mt-2">
+                                <a href="#" class="text-decoration-none text-black-50">Zomaland</a>
+                            </li>
+                            <li class="nav-item mt-2">
+                                <a href="#" class="text-decoration-none text-black-50">Weather Union</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="rest mt-3">
+                        <h5>For Restaurants</h5>
+                        <ul class="navbar-nav">
+                            <li class="nav-item mt-3">
+                                <a href="#" class="text-decoration-none text-black-50">Partner With Us</a>
+                            </li>
+                            <li class="nav-item mt-2">
+                                <a href="#" class="text-decoration-none text-black-50">Apps For You</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="learn mt-3">
+                        <h5>Learn More</h5>
+                        <ul class="navbar-nav">
+                            <li class="nav-item mt-3">
+                                <a href="#" class="text-decoration-none text-black-50">Privacy</a>
+                            </li>
+                            <li class="nav-item mt-2">
+                                <a href="#" class="text-decoration-none text-black-50">Security</a>
+                            </li>
+                            <li class="nav-item mt-2">
+                                <a href="#" class="text-decoration-none text-black-50">Terms</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="link mt-3">
+                        <h5>Social links</h5>
+                        <div class="icons mt-3">
+                            <i class="bi bi-linkedin me-2"></i>
+                            <i class="bi bi-instagram me-2"></i>
+                            <i class="bi bi-twitter-x me-2"></i>
+                            <i class="bi bi-youtube me-2"></i>
+                            <i class="bi bi-facebook me-2"></i>
+                        </div>
+                        <div class="mt-3">
+                            <img src="./images/download-img-1.jpg" class="img-fluid mb-3"
+                                style="width: 137px; height: 40px;" alt="">
+                            <img src="./images/download-img-2.jpg" class="img-fluid" style="width: 137px; height: 40px;"
+                                alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="text-muted pt-3 border-top">
+                        By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies. All trademarks are properties of their respective owners. 2008-2025 © Zomato™ Ltd. All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
